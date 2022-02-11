@@ -2,7 +2,7 @@ import './App.css';
 import uuid from 'react-uuid'
 import Sidebar from './components/Sidebar';
 import Main from './components/Main';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
   const [notes, setNotes] = useState(JSON.parse(localStorage.notes) || []);
